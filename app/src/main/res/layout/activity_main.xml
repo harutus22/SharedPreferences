@@ -14,12 +14,14 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="@string/name"
-        />
+        android:inputType="textPersonName" />
+
     <EditText
         android:id="@+id/editEmail"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="@string/email"/>
+        android:hint="@string/email"
+        android:inputType="textEmailAddress" />
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -51,6 +53,14 @@
             android:layout_height="wrap_content"
             android:text="@string/clear"
             android:layout_alignParentEnd="true"/>
+
     </RelativeLayout>
+
+    <Button
+        android:onClick="onClearData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/clear_data"
+        />
 
 </LinearLayout>
